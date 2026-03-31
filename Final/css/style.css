@@ -1,0 +1,27 @@
+/* ===================================
+   NEWS WEBSITE - MAIN STYLESHEET
+   
+   This file imports all CSS modules.
+   Each file handles a specific section
+   of the application for better
+   organization and maintainability.
+   
+   === CSS Module Structure ===
+   1. variables.css    - Global variables & base styles
+   2. navbar.css       - Navigation & header styles
+   3. auth.css         - Authentication page styles
+   4. buttons.css      - Button styles & variants
+   5. news-cards.css   - News grid & card styles
+   6. alerts.css       - Alert & message styles
+   7. responsive.css   - Media queries & utilities
+   
+   =================================== */
+
+@import url('./variables.css');
+@import url('./navbar.css');
+@import url('./auth.css');
+@import url('./buttons.css');
+@import url('./news-cards.css');
+@import url('./alerts.css');
+@import url('./layout.css');
+@import url('./responsive.css');

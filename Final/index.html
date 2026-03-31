@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Hub - Tin tức mới nhất</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-brand">Vi En Ẹt Brét</div>
+        <div class="nav-links">
+          <button id="logoutBtn" class="btn btn-logout">Đăng xuất</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="header">
+        <h1>Tin tức mới nhất</h1>
+        <div class="search-section">
+          <input type="text" id="searchInput" placeholder="Tìm kiếm tin tức" />
+          <select id="categorySelect" class="category-select">
+            <option value="general">Tổng hợp</option>
+            <option value="business">Kinh doanh</option>
+            <option value="entertainment">Giải trí</option>
+            <option value="health">Sức khỏe</option>
+            <option value="science">Khoa học</option>
+            <option value="sports">Thể thao</option>
+            <option value="technology">Công nghệ</option>
+          </select>
+          <button id="searchBtn" class="btn btn-primary">Tìm kiếm</button>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="main-content">
+          <div id="newsContainer" class="news-grid">
+            <!-- News articles will be loaded here -->
+          </div>
+
+          <div class="loading" id="loading" style="display: none">
+            <p>Đang tải tin tức...</p>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <h3>Sản phẩm nổi bật</h3>
+          <div id="productsContainer" class="products-list">
+            <!-- Products will load here -->
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
